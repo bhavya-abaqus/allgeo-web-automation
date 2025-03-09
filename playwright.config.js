@@ -39,11 +39,6 @@ export default defineConfig({
             name: 'chromium',
             use: { ...devices['Desktop Chrome'] },
         },
-        
-        {
-            name: 'Microsoft Edge',
-            use: { ...devices['Desktop Edge'], channel: 'msedge' },
-        },
 
         {
             name: 'firefox',
@@ -53,6 +48,11 @@ export default defineConfig({
         {
             name: 'webkit',
             use: { ...devices['Desktop Safari'] },
+        },
+
+        {
+            name: 'Microsoft Edge',
+            use: { ...devices['Desktop Edge'] }, //, channel: 'msedge'
         },
 
         /* Test against mobile viewports. */
