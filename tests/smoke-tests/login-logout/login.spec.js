@@ -1,12 +1,13 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../../pageObjects/LoginPage');
+const { POManager } = require('../../../pageObjects/POManager');
 
 test('@smoke Login', async ({ page }) => {
     const accountID = 'ah-demo';
     const username = 'manager';
     const password = 'abaqus@22';
 
-    const loginPage = new LoginPage(page);
+    const poManager = new POManager(page);
+    const loginPage = poManager.getLoginPage();
     await loginPage.goTo();
     await loginPage.login(accountID, username, password);
 
