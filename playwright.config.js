@@ -28,7 +28,7 @@ export default defineConfig({
     use: {
         /* Base URL to use in actions like `await page.goto('/')`. */
         baseURL: process.env.DEV === '1' ? 'https://app.dev.allgeo.com' : 'https://app.allgeo.com',
-        headless: false,
+        headless: true,
         screenshot: "only-on-failure", // Screenshot setting modes are "off"|"on"|"only-on-failure"
         video: 'off',
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
