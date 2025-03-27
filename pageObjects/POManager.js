@@ -8,10 +8,10 @@ class POManager {
     constructor(page) {
         this.page = page;
         this.loginPage = new LoginPage(page);
-        this.homePage = new HomePage(page);
-        this.monitorPage = new MonitorPage(page);
-        this.reportsPage = new ReportsPage(page);
-        this.companyPage = new CompanyPage(page);
+        // this.homePage = new HomePage(page);
+        // this.monitorPage = new MonitorPage(page);
+        // this.reportsPage = new ReportsPage(page);
+        // this.companyPage = new CompanyPage(page);
     }
 
     getLoginPage() {

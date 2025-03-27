@@ -1,3 +1,5 @@
+const { test, expect } = require('@playwright/test');
+
 class LoginPage {
     // constructor(page)
     constructor(page) {
@@ -9,7 +11,7 @@ class LoginPage {
     };
 
     async goTo() {
-        await this.page.goto("https://app.allgeo.com/login");
+        await this.page.goto('/login');
     }
 
     async login(accountID, username, password) {
