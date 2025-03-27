@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "smoke": "npx playwright test tests/smoke-tests/*",
+    "smoke": "npx playwright test -g @smoke",
     "regression": "npx playwright test -g @regression"
   },
   "keywords": [],
